@@ -1,0 +1,131 @@
+-#================================================== 
+-#  Global Page Section Start
+-#==================================================
+%section.global-page-header
+  .container
+    .row
+      .col-md-12
+        .block
+          %h2 Web Services
+          %ol.breadcrumb
+            %li= link_to 'Home', root_path
+            %li= link_to 'Service', about_path
+
+
+-#================================================== 
+-#  Service Page Section  Start
+-#==================================================
+%section#service-page.pages.service-page
+  .container
+    .row
+      .col-md-6
+        .block
+          %h2.subtitle.wow.fadeInUp.animated{ "data-wow-delay": ".3s", "data-wow-duration": "500ms"}
+            Web Services
+          %p.subtitle-des.wow.fadeInUp.animated{ "data-wow-delay": ".5s", "data-wow-duration": "500ms"}
+            We don’t offer “packages.” Each solution we offer is custom to our client’s needs. And the solution starts with learning about the long-term goals of your organization. Once we understand that, we can offer a range of services that use the power of the Internet to achieve those goals.  
+
+          .row.service-parts
+            .col-md-6
+              .block.wow.fadeInUp.animated{ "data-wow-duration": "400ms", "data-wow-delay": "600ms"}
+                %i.ion-ios-world
+                %h4 Web Development
+                %p We create visually appealing websites that are up to date with all the new trends. Our websites work on all platforms such as mobile or tablet devices and are easy to login and update further. We strive to provide services for start-up (with a brilliant ideas), small business needing web presence.
+
+            .col-md-6
+              .block.wow.fadeInUp.animated{ "data-wow-duration": "400ms", "data-wow-delay": "600ms"}
+                %i.ion-settings
+                %h4 Maintenance & Support
+                %p Is your website in need of updating/upgrading into latest tech but you don't have the time or resources to take care of it? Let us help with our website maintenance and support services. Bug fix, Content updates, Managed website hosting, Website backups Search engine optimisation (SEO)
+
+            .col-md-6
+              .block.wow.fadeInUp.animated{ "data-wow-duration": "400ms", "data-wow-delay": "600ms"}
+                %i.ion-android-cart
+                %h4 E-Commerce Solutions
+                %p Our online shopping cart software allows for an unlimited amount of products, categories, orders and customers. You could have your online shop up and running within a matter of days. Our solution incorporates everything you need to run an e-commerce site, including the setting up of secure credit card payment methods, PayPal accounts and more
+            .col-md-6
+              .block.wow.fadeInUp.animated{ "data-wow-duration": "400ms", "data-wow-delay": "600ms"}
+                %i.ion-ios-color-filter
+                %h4 Search Engine Optimization (SEO)
+                %p (SEO) is all about getting your website optimized for the best possible performance on search engines. From the moment we start designing and developing a website, it is all done in a manner than ensures the best possible ranking on search engines. We take this a step further and provide an on going service to constantly improve your search engine ranking.
+
+      #product_list.col-md-6
+        %h2.subtitle.wow.fadeInUp.animated{ "data-wow-delay": ".3s", "data-wow-duration": "500ms"}
+          The types of websites and online business systems include:
+        %p.subtitle-des.wow.fadeInUp.animated{ "data-wow-delay": ".5s", "data-wow-duration": "500ms"}
+          Whether you need to sell products or services, generate business leads and create brand awareness, we have a marketing and online advertising solution to suite your requirements.
+
+        %h4 Personal/blog websites
+        %p Used for personal stuff, career marketing, social networking, or personal expression.
+        %h4 Business Websites
+        %p Having a web presence allows your business to generate more business leads and spread information easily with no physical limits.
+        %h4 Job Board Site
+        %p A employment websites that allow employers to post job requirements for a position to be filled and jobseeker to apply for that position.
+        %h4 E-commerce online store
+        %p Make your own marketplaces where individuals can buy and sell their goods.
+        %h4 Membership site
+        %p A closed site for online business where only members who subscribe can access the content you have. 
+        %h4 Classified Ads System
+        %p Create an advertising egency, were users can create ads.
+        %h4 Bulletin Board Software 
+        %p This is a online version of a newspaper. Cool it is like having your own news channel.
+        %h4 Auction site
+        %p Site that allow user to held auction over the internet removing the physical limitations 
+        %h4 Chating/Dating sites
+        %p Live chat site where your users can have realtime conversation with each over. 
+
+
+-#================================================== 
+-# Works Section Start
+-#==================================================
+%section.works.service-page
+  .container
+    %h2.subtitle.wow.fadeInUp.animated{ "data-wow-delay": ".3s", "data-wow-duration": "500ms"}
+      Some Of Our Features Works
+    %p.subtitle-des.wow.fadeInUp.animated{ "data-wow-delay": ".5s", "data-wow-duration": "500ms"}
+      Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
+    .row
+      .col-sm-3
+        %figure.wow.fadeInLeft.animated.portfolio-item{ "data-wow-duration": "500ms", "data-wow-delay": "0ms"}
+          .img-wrapper
+            = image_tag("portfolio/item-1.jpg", class: "img-responsive", alt: "this is a title")
+            .overlay
+              .buttons
+                = link_to "Demo", "portfolio/item-1.jpg", rel: "gallery"
+                = link_to "Details", "", target: "_blank"
+          %figcaption
+            %h4= link_to "Dew Drop", ""
+            %p Redesigne UI Concept
+      .col-sm-3
+        %figure.wow.fadeInLeft.animated{ "data-wow-duration": "500ms", "data-wow-delay": "200ms"}
+          .img-wrapper
+            = image_tag "portfolio/item-1.jpg", class: "img-responsive", alt: "this is a title"
+            .overlay
+              .buttons
+                = link_to "Demo", "portfolio/item-1.jpg", rel: "gallery"
+                = link_to "Details", "", target: "_blank"
+          %figcaption
+            %h4= link_to "Dew Drop", ""
+            %p Redesigne UI Concept
+      .col-sm-3
+        %figure.wow.fadeInLeft.animated{ "data-wow-duration": "500ms", "data-wow-delay": "400ms"}
+          .img-wrapper
+            = image_tag "portfolio/item-1.jpg", class: "img-responsive", alt: "this is a title"
+            .overlay
+              .buttons
+                = link_to "Demo", "portfolio/item-1.jpg", rel: "gallery"
+                = link_to "Details", "", target: "_blank"
+          %figcaption
+            %h4= link_to "Dew Drop", ""
+            %p Redesigne UI Concept
+      .col-sm-3
+        %figure.wow.fadeInLeft.animated{ "data-wow-duration": "500ms", "data-wow-delay": "700ms"}
+          .img-wrapper
+            = image_tag "portfolio/item-1.jpg", class: "img-responsive", alt: "this is a title"
+            .overlay
+              .buttons
+                = link_to "Demo", "portfolio/item-1.jpg", rel: "gallery"
+                = link_to "Details", "", target: "_blank"
+          %figcaption
+            %h4= link_to "Dew Drop", ""
+            %p Redesigne UI Concept

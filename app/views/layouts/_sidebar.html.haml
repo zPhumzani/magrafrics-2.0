@@ -1,0 +1,34 @@
+.sidebar
+  .search.widget
+    %form{ action: "", method: "get", class: "searchform", role: "search"}
+      .input-group
+        %input{type: "text", class: "form-control", placeholder: "Search for..."}
+        %span.input-group-btn
+          %button.btn.btn-default{type: "button"}
+            %i.ion-search
+  
+  .author.widget
+    = image_tag("author/author-bg.jpg", class: "img-responsive")
+    .author-body.text-center
+      .author-img
+        = image_tag("author/author.jpg", class: "img-responsive")
+      .author-bio
+        %h3 Jonathon Andrew
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt magnam asperiores consectetur, corporis ullam impedit.
+
+
+  .categories.widget
+    %h3.widget-head Categories
+    %ul
+      - Category.all.each do |cat| 
+        %li
+          = link_to cat do
+            = cat.name
+                                    
+  .recent-post.widget
+    %h3 Recent Posts
+    %ul
+      - Post.all().recent_posts.each do |post| 
+        %time= post.created_at
+        %li= link_to "#{post.title}", post
+        %br

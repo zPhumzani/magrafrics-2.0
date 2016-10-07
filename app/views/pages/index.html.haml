@@ -1,0 +1,175 @@
+-#==================================================
+-# Slider Section Start
+-#================================================== 
+%section#hero-area
+  .container
+    .row
+      .col-md-12.text-center
+        .block.wow.fadeInUp{ "data-wow-delay": ".3s"}
+          -# Slider 
+          %section.cd-intro
+            %h1.wow.fadeInUp.animated.cd-headline.slide{ "data-wow-delay": ".4s"}
+              %span 
+                HI, WE ARE
+              %br
+              %span &lt;
+              %span.cd-words-wrapper
+                %b.is-visible= link_to(image_tag("magrafrics3.png", alt: ""), root_path)
+                %b DESIGNERS
+                %b DEVELOPERS
+                %b ARTISANS
+                %b RUBYISTS
+                %b BROTHERS
+                %b CODERS
+              %span /&gt;
+          %h2.wow.fadeInUp.animated{ "data-wow-delay": ".6s" }
+            We build online business from the ground up. 
+            %br Our hand-crafted creativity delivers strength and power to your online presence. 
+          %a.btn-lines.dark.light.wow.fadeInUp.animated.smooth-scroll.btn.btn-default.btn-green{ "data-wow-delay": ".9s", href: "#works",  "data-section": "#works"} 
+            View Works
+
+
+
+-#================================================== 
+-#  Service Page Section  Start
+-#==================================================
+%section#service-page.pages.service-page
+  .container
+    .row
+      .col-md-12
+        .block    
+          .section-heading
+            %h1.title.wow.fadeInDown{ "data-wow-delay": ".3s"} We Offer
+            %p.wow.fadeInDown{ "data-wow-delay": ".5s"}
+              We Love What We Do
+          .row.service-parts
+            .col-md-6
+              .block.wow.fadeInUp.animated{ "data-wow-duration": "400ms", "data-wow-delay": "600ms"}
+                = image_tag('internet_pic1.jpg', class: 'img-responsive img-thumbnail')
+                %h4 Website Design and Development
+                %p We create visually appealing websites that are up to date with all the new trends. Our websites work on all platforms such as mobile or tablet devices and are easy to login and update further. We strive to provide services for start-up (with a brilliant ideas), small business needing web presence.
+
+            .col-md-6
+              .block.wow.fadeInUp.animated{ "data-wow-duration": "400ms", "data-wow-delay": "600ms"}
+                = image_tag('web-maintenance1.png', class: 'img-responsive img-thumbnail')
+                %h4 Maintenance & Support 
+                %p Is your website in need of updating/upgrading into latest tech but you don't have the time or resources to take care of it? Let us help with our website maintenance and support services. Bug fix, Content updates, Managed website hosting, Website backups Search engine optimisation (SEO)
+
+            .col-md-6
+              .block.wow.fadeInUp.animated{ "data-wow-duration": "400ms", "data-wow-delay": "600ms"}
+                = image_tag('online-shopping.jpg', class: 'img-responsive img-thumbnail')
+                %h4 E-Commerce Solutions 
+                %p Our online shopping cart software allows for an unlimited amount of products, categories, orders and customers. You could have your online shop up and running within a matter of days. Our solution incorporates everything you need to run an e-commerce site, including the setting up of secure credit card payment methods, PayPal accounts and more
+            .col-md-6
+              .block.wow.fadeInUp.animated{ "data-wow-duration": "400ms", "data-wow-delay": "600ms"}
+                = image_tag('seo1.jpg', class: 'img-responsive img-thumbnail')
+                %h4 Search Engine Optimization (SEO)
+                %p (SEO) is all about getting your website optimized for the best possible performance on search engines. From the moment we start designing and developing a website, it is all done in a manner than ensures the best possible ranking on search engines. We take this a step further and provide an on going service to constantly improve your search engine ranking.
+
+-#================================================== 
+-# Company Feature Section Start
+-#==================================================
+%section.about-feature.clearfix
+  .container-fluid
+    .row
+      .block.about-feature-1.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}
+        %h2 We Will Create
+        %p
+          A tailor-made solution based on your business's needs. Every business is different, with a unique growth path and requirements.
+           
+      .block.about-feature-2.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".5s"}
+        %h2.item_title We Also Include
+        %p
+          Search Engine Optimisation (SEO) best practices, maintaince and support and personalised email addresses. Everything you need to get your business online!
+      .block.about-feature-3.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".7s"}
+        %h2.item_title All Website
+        %p 
+          Packages include access to a Content Management System (CMS) so you can edit your site once live and add your own pages.
+          
+
+
+-#==================================================
+-# Portfolio Section Start
+-#================================================== 
+%section#works.works
+  .container
+    .section-heading
+      %h1.title.wow.fadeInDown{ "data-wow-delay": ".3s"} Latest Works
+      %p.wow.fadeInDown{ "data-wow-delay": ".5s"}
+        Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere 
+        %br tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
+    .row
+      .col-sm-4.col-xs-12
+        %figure.wow.fadeInLeft.animated.portfolio-item{ "data-wow-duration": "500ms", "data-wow-delay": "0ms"}
+          .img-wrapper
+            = image_tag("portfolio/item-1.jpg", class: "img-responsive", alt: "this is a title")
+            .overlay
+              .buttons
+                %a{ rel: "gallery", class: "fancybox", href: "http://thiefshop.herokuapp.com"} Demo
+                %a{ target: "_blank", href: "single-portfolio.html"} Details
+          %figcaption
+            %h4
+              = link_to "Dew Drop", ""
+            %p Redesigne UI Concept
+
+      .col-sm-4.col-xs-12
+        %figure.wow.fadeInLeft.animated{ "data-wow-duration": "500ms", "data-wow-delay": "500ms"}
+          .img-wrapper
+            = image_tag("portfolio/item-1.jpg", class: "img-responsive", alt: "this is a title")
+            .overlay
+              .buttons
+                %a{ rel: "gallery", class: "fancybox", href: "theifshop"} Demo
+                %a{ target: "_blank", href: "single-portfolio.html"} Details
+          %figcaption
+            %h4
+              = link_to "Dew Drop", ""
+            %p Redesigne UI Concept
+      .col-sm-4.col-xs-12
+        %figure.wow.fadeInLeft.animated{ "data-wow-duration": "500ms", "data-wow-delay": "500ms"}
+          .img-wrapper
+            = image_tag("portfolio/item-1.jpg", class: "img-responsive", alt: "this is a title")
+            .overlay
+              .buttons
+                %a{ rel: "gallery", class: "fancybox", href: "portfolio/item-1.jpg"} Demo
+                %a{ target: "_blank", href: "single-portfolio.html"} Details
+          %figcaption
+            %h4
+              = link_to "Dew Drop", ""
+            %p Redesigne UI Concept
+      .col-sm-4.col-xs-12
+        %figure.wow.fadeInLeft.animated{ "data-wow-duration": "500ms", "data-wow-delay": "500ms"}
+          .img-wrapper
+            = image_tag("portfolio/item-1.jpg", class: "img-responsive", alt: "this is a title")
+            .overlay
+              .buttons
+                %a{ rel: "gallery", class: "fancybox", href: "portfolio/item-2.jpg"} Demo
+                %a{ target: "_blank", href: "single-portfolio.html"} Details
+          %figcaption
+            %h4
+              = link_to "Dew Drop", ""
+            %p Redesigne UI Concept
+      .col-sm-4.col-xs-12
+        %figure.wow.fadeInLeft.animated{ "data-wow-duration": "500ms", "data-wow-delay": "500ms"}
+          .img-wrapper
+            = image_tag("portfolio/item-1.jpg", class: "img-responsive", alt: "this is a title")
+            .overlay
+              .buttons
+                %a{ rel: "gallery", class: "fancybox", href: "portfolio/item-1.jpg"} Demo
+                %a{ target: "_blank", href: "single-portfolio.html"} Details
+          %figcaption
+            %h4
+              = link_to "Dew Drop", ""
+            %p Redesigne UI Concept
+      .col-sm-4.col-xs-12
+        %figure.wow.fadeInLeft.animated{ "data-wow-duration": "500ms", "data-wow-delay": "500ms"}
+          .img-wrapper
+            = image_tag("portfolio/item-1.jpg", class: "img-responsive", alt: "this is a title")
+            .overlay
+              .buttons
+                %a{ rel: "gallery", class: "fancybox", href: "portfolio/item-1.jpg"} Demo
+                %a{ target: "_blank", href: "single-portfolio.html"} Details
+          %figcaption
+            %h4
+              = link_to "Dew Drop", ""
+            %p Redesigne UI Concept
+            

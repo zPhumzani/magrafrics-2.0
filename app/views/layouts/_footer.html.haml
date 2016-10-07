@@ -1,0 +1,44 @@
+-#==================================================
+-# Call To Action Section Start
+-#================================================== -->
+%section#call-to-action
+  .container
+    .row
+      .col-md-12
+        .block
+          %h2.title.wow.fadeInDown{"data-wow-delay": ".3s", "data-wow-duration": "500ms"} 
+            Let’s build something great.
+          %p.wow.fadeInDown{ "data-wow-delay": ".5s", "data-wow-duration": "500ms"}
+            Do you have a product idea you’re passionate about?
+            %br A market you want to own? Customers who need you to fill a gap?
+            = link_to 'Get in Touch', contact_path, class: "btn btn-default btn-contact wow fadeInDown", "data-wow-delay": ".7s", "data-wow-duration": "500ms"
+
+-#==================================================
+-# Footer Section Start
+-#================================================== -->
+%footer#footer
+  .container
+    .col-md-8
+      %p.copyright 
+        Copyright:
+        %span 2015 . 
+        %a{ href: "http://www.magrafrics.com"} Magrafrics.com
+
+    .col-md-4
+      -# Social Media
+      %ul.social
+        %li
+          %a{ href: "", class: "Facebook"}
+            %i.ion-social-facebook
+        %li
+          %a{ href: "", class: "google"}
+            %i.ion-social-google
+        %li
+          %a{ href: "", class: "twitter"}
+            %i.ion-social-twitter
+        %li
+          %a{ href: "", class: "skype"}
+            %i.ion-social-skype
+        %li
+          %a{ href: "", class: "yoututbe"}
+            %i.ion-social-youtube

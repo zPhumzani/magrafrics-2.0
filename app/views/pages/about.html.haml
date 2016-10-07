@@ -1,0 +1,202 @@
+
+
+
+-#================================================== 
+-# Company Feature Section Start
+-#==================================================
+%section.about-feature.clearfix.about-page-header
+  .container-fluid
+    .row
+      .col-md-4.block.about-feature-1.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}
+        %h2 Who we are?
+        %p
+          Established in 2014. Magrafrics is an vibrate young web development agency in Johannesburg with massive talented coders and designers. Our services range from web development, content marketing, social media, content creation and search engine optimisation.
+      .col-md-4.block.about-feature-2.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".5s"}
+        %h2.item_title How We Do It?
+        %p
+          These are just some of the languages and internet technologies we use to build our web sites:, Html/Html5, Css/Css3, Ruby on rails, WordPress, Magento, PHP, Ajax, JavaScript, Apache, jQuery, MySQL, Mongo, Photoshop, Gimp, Linux, Sublime Text, Coffee, and more ...
+      .col-md-4.block.about-feature-3.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".7s"}
+        %h2.item_title What we do?
+        %p
+          We combine ideas with innovative technology and the latest trends to ensure businesses gain maximum advantage in a rapidly evolving marketplace. We like to see ourselves as a small, flexible, fast-moving team with big ideas. We love what we do.
+
+
+
+-#================================================== 
+-# Company Description Section Start
+-#==================================================
+%section.company-description
+  .container
+    .row
+      .col-md-6.wow.fadeInLeft{ "data-wow-delay": ".3s"}
+        = image_tag("faq-banner.jpeg", alt: "", class: "img-responsive")
+      .col-md-6
+        .block
+          %h3.subtitle.wow.fadeInUp{ "data-wow-delay": ".3s", "data-wow-duration": "500ms"}
+            Frequently Asked Questions 
+          %p.wow.fadeInUp{ "data-wow-delay": ".5s", "data-wow-duration": "500ms"}
+            We have compiled a short list of the questions we are asked most frequently by our clients, our FAQs. If you don’t see the answer to your question here, please  email us.
+
+          %p.wow.fadeInUp{ "data-wow-delay": ".7s", "data-wow-duration": "500ms"}
+            We are here to support you through the whole process to help create a website that will deliver results for your business.
+
+
+
+-#================================================== 
+-# Company faq Section Start
+-#==================================================
+%section
+  .container
+    .row
+      .col-md-12
+        .panel-group#accordion{role: "tablist", "aria-multiselectable": "true"}
+          .panel.panel-default.wow.fadeInDown{ "data-wow-duration": "600ms", "data-wow-delay": ".9s"}
+            .panel-heading{role: "tab", id: "headingOne"}
+              %a{role: "button", "data-toggle": "collapse", "data-parent": "#accordion", href: "#collapseOne", "aria-expanded": "true", "aria-controls": "collapseOne"}
+                %h4.panel-title.item_title
+                  I have a website idea/concept, can you help me build it? 
+        
+            #collapseOne.panel-collapse.collapse.in{role: "tabpanel", "aria-labelledby": "headingOne"}
+              .panel-body
+                %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}
+                  Whether it is a unique/new idea/concept or a already existing business concept with one or more competitors. If you want it we will build it.
+          .panel.panel-default.wow.fadeInDown{ "data-wow-duration": "600ms", "data-wow-delay": ".9s"}
+            .panel-heading{role: "tab", id: "headingTwo"}
+              %a{role: "button", "data-toggle": "collapse", "data-parent": "#accordion", href: "#collapseTwo", "aria-expanded": "true", "aria-controls": "collapseTwo"}
+                %h4.panel-title
+                  Do you build mobile apps?
+            #collapseTwo.panel-collapse.collapse{role: "tabpanel", "aria-labelledby": "headingTwo"}
+              .panel-body
+                %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}
+                  No, we don't - but we do make our websites work on all devices. Developing an app for mobiles and tablets across the range of different platforms can be an expensive task, and some cases can be resolved with a responsive website.
+          .panel.panel-default.wow.fadeInDown{ "data-wow-duration": "600ms", "data-wow-delay": ".9s"}
+            .panel-heading{role: "tab", id: "headingThree"}
+              %a{role: "button", "data-toggle": "collapse", "data-parent": "#accordion", href: "#collapseThree", "aria-expanded": "true", "aria-controls": "collapseThree"}
+                %h4.panel-title
+                  What is a Content Management System (CMS)?
+            #collapseThree.panel-collapse.collapse{role: "tabpanel", "aria-labelledby": "headingThree"}
+              .panel-body
+                %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}
+                  A content management system (CMS) enables you to maintain the content on your website without any additional software or our technical skill. When using a CMS, you can add new pages, upload images and be in full control of your site - all you need is a web browser and an internet connection. Find out more about the Content Management Systems we use.
+          .panel.panel-default.wow.fadeInDown{ "data-wow-duration": "600ms", "data-wow-delay": ".9s"}
+            .panel-heading{role: "tab", id: "headingFour"}
+              %a{role: "button", "data-toggle": "collapse", "data-parent": "#accordion", href: "#collapseFour", "aria-expanded": "true", "aria-controls": "collapseFour"}
+                %h4.panel-title
+                  Will my website work on mobile devices?
+            #collapseFour.panel-collapse.collapse{role: "tabpanel", "aria-labelledby": "headingFour"}
+              .panel-body
+                %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}
+                  Yes, using responsive design we ensure our sites work on all devices, including desktops, laptops, tablets and mobiles.
+
+          .panel.panel-default.wow.fadeInDown{ "data-wow-duration": "600ms", "data-wow-delay": ".9s"}
+            .panel-heading{role: "tab", id: "headingSix"}
+              %a{role: "button", "data-toggle": "collapse", "data-parent": "#accordion", href: "#collapseSix", "aria-expanded": "true", "aria-controls": "collapseSix"}
+                %h4.panel-title
+                  How do I track the hours spent on my project?
+
+            #collapseSix.panel-collapse.collapse{role: "tabpanel", "aria-labelledby": "headingSix"}
+              .panel-body
+                %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}  
+                  Based on your preferences and size of project, we choose daily status emails, Online PMS i.e. Project Management Systems or using Basecamp, Mavenlink like popular time tracking and project management tools. 
+          .panel.panel-default.wow.fadeInDown{ "data-wow-duration": "600ms", "data-wow-delay": ".9s"}
+            .panel-heading{role: "tab", id: "headingSeven"}
+              %a{role: "button", "data-toggle": "collapse", "data-parent": "#accordion", href: "#collapseSeven", "aria-expanded": "true", "aria-controls": "collapseSeven"}
+                %h4.panel-title
+                  How much does a website project cost?
+
+            #collapseSeven.panel-collapse.collapse{role: "tabpanel", "aria-labelledby": "headingSeven"}
+              .panel-body
+                %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"} 
+                  Payment milestones are decided based on size of the project. We work out on the payment structures depending on your project’s milestones.(e.g. A static sites price start at R300, while dynamic sites price start at R750).
+          .panel.panel-default.wow.fadeInDown{ "data-wow-duration": "600ms", "data-wow-delay": ".9s"}
+            .panel-heading{role: "tab", id: "headingEight"}
+              %a{role: "button", "data-toggle": "collapse", "data-parent": "#accordion", href: "#collapseEight", "aria-expanded": "true", "aria-controls": "collapseEight"}
+                %h4.panel-title
+                  What mode of payments available?
+
+            #collapseEight.panel-collapse.collapse{role: "tabpanel", "aria-labelledby": "headingEight"}
+              .panel-body
+                %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"} 
+                  Our customers have the choice to pay via Bank Wire Transfer/ Bank TT, Credit Card or with your PayPal account.
+          .panel.panel-default.wow.fadeInDown{ "data-wow-duration": "600ms", "data-wow-delay": ".9s"}
+            .panel-heading{role: "tab", id: "headingNine"}
+              %a{role: "button", "data-toggle": "collapse", "data-parent": "#accordion", href: "#collapseNine", "aria-expanded": "true", "aria-controls": "collapseNine"}
+                %h4.panel-title
+                  What if I face after delivery bugs?
+
+            #collapseNine.panel-collapse.collapse{role: "tabpanel", "aria-labelledby": "headingNine"}
+              .panel-body
+                %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"} 
+                  We provide 30 days FREE service from beta delivery of your application. Hence you can relax as even if any bugs arises, it won’t eat your pocket.
+
+
+
+-#================================================== 
+-# Company Process Section Start
+-#==================================================
+
+
+%section#clients
+  .container
+    .row
+      .col-md-12
+        %h3.subtitle.wow.fadeInUp{ "data-wow-delay": ".3s", "data-wow-duration": "500ms"}
+          Our Web Design Process:
+        %p.subtitle-des.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".5s"}
+          Magrafrics will help you turn your idea into code. We work closely with you to create a Website that is relevant to your industry and market, while staying focused on your business objectives and goals. So here is our simple, yet effective process:
+      #exTab1.col-md-12
+        %ul.nav.nav-pills.nav-justified.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}
+          %li.active= link_to "Define the Project", '#1a', "data-toggle": "tab"
+          %li= link_to "Information Gathering", '#2a', "data-toggle": "tab"
+          %li= link_to "Develop", '#3a', "data-toggle": "tab"
+          %li= link_to "Test", '#4a', "data-toggle": "tab"
+          %li= link_to "Code refactoring", '#5a', "data-toggle": "tab"
+          %li= link_to "Deploy", '#6a', "data-toggle": "tab"
+
+        .tab-content.clearfix
+          .tab-pane.active#1a.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}
+            %p
+              We work with the client to define the project. This helps to know what the client is about and the direction you want to take your business. The project may be something like "A event booking stystem" or "A chat site"
+          .tab-pane#2a
+            %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}
+              During this phase, we take the opportunity to do some vital planning and research. We look at a variety of elements, these includes, content sitemap, a menu sitemap, a user workflow, database planning...
+          .tab-pane#3a
+            %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"} 
+              During the development phase, we keep the project live in our development server and we like to keep in regular contact with you, as communication is key to any successful project. We develop in many different programs and languages.
+          .tab-pane#4a
+            %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"} 
+              No project is perfect the first time around. Once the development has been completed, it can be rolled out for testing, although we don’t provide outside testing unless budgeted it is a good idea to get you and your employees to test your new site.
+          .tab-pane#5a
+            %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"} 
+              With testing feedback in hand, we go back and continue to revise and improve the final solution. Based on an analysis of cost vs. needs, together with the client will closely review the project and make balanced decisions on which features will stay, which will be redesigned, and which may be eliminated
+          .tab-pane#6a
+            %p.wow.fadeInLeft{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}
+              Once improvement has been completed, we migrate your site from our development environment to our live environment. We provide domain registration and hosting so you don’t need to worry about all the technical parts.
+
+
+
+
+-#==================================================
+-# Clients Section Start
+-#================================================== 
+%section#clients
+  .container
+    .row
+      .col-md-12
+        %h2.subtitle.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"}
+          Our Associates.
+        %p.subtitle-des.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".5s"}
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, error.
+        #clients-logo.owl-carousel
+          %article
+            = image_tag('clients/logo-1.jpg', alt: "")
+          %article
+            = image_tag('clients/logo-2.jpg', alt: "")
+          %article
+            = image_tag('clients/logo-3.jpg', alt: "")
+          %article
+            = image_tag('clients/logo-4.jpg', alt: "")
+          %article
+            = image_tag('clients/logo-5.jpg', alt: "")
+
+

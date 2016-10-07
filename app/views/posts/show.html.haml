@@ -1,0 +1,13 @@
+.row
+  .col-md-12
+    %h2= @post.title
+    .post-img
+      = image_tag("blog/post-1.jpg", class: "img-responsive")
+    .post-content
+      %p= @post.body
+      %ul.social-share
+        %h4 Share this article
+        %li= link_to "", "#", class: "Facebook ion-social-facebook"
+        %li= link_to "", "#", class: "Twitter ion-social-twitter"
+        %li= link_to "", "#", class: "Linkedin ion-social-linkedin"
+        %li= link_to "", "#", class: "Google PlusLinkedin ion-social-googleplus"

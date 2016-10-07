@@ -1,0 +1,35 @@
+!!!
+%html
+  %head
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %title= content_for?(:title) ? yield(:title) : 'Magrafrics'
+    %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Magrafrics'}"}
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %header
+      = render 'layouts/navigation'
+    %main{:role => "main"}
+      -#================================================== 
+      -#  Global Page Section Start
+      -#================================================== 
+      %section.global-page-header
+        .container
+          .row
+            .col-md-12
+              .block
+                %h2 Blog
+                %ol.breadcrumb
+                  %li= link_to 'Home', root_path
+                  %li= link_to 'Blog', posts_path
+      %section#blog-full-width
+        .container
+          .row
+            .col-md-8
+              = render 'layouts/messages'
+              = yield
+            .col-md-4
+              = render 'layouts/sidebar'
+
+    = render 'layouts/footer'
