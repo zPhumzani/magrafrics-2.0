@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'service' => 'pages#service', as: :service
   get 'faq' => 'pages#faq', as: :faq
   get 'terms' => 'pages#terms', as: :terms
+  get 'gallery' => 'pages#gallery', as: :gallery
 
   root 'pages#index'
 
