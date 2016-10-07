@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 
-ruby '2.3.1'
+ruby "2.3.1"
 
 # Add gems
 gem 'bootstrap-sass'
