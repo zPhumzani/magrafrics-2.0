@@ -21,7 +21,6 @@
 .byebug_history
 
 #  ignore public assets
-/public/assets/*
 
 .env
 Procfile
