@@ -30,6 +30,8 @@
             = form_for @contact, html: {id: 'contact-form' } do |f|
               .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".6s"}
                 = f.text_field :name, placeholder: "Your Name", class: 'form-control'
+              .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".7s"}
+                = f.text_field :subject, placeholder: "Your Subject", class: 'form-control'
               .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".8s"}
                 = f.email_field :email, placeholder: "Your Email", class: 'form-control'
               .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".10s"}
