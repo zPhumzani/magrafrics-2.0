@@ -1,0 +1,39 @@
+-#================================================== 
+-# Global Page Section Start
+-#================================================== -->
+%section.global-page-header
+  .container
+    .row
+      .col-md-12
+        .block
+          %h2 Contact
+          %ol.breadcrumb
+            %li
+              = link_to root_path do
+                %i.icon-ios-home
+                Home
+            %li.active Contact
+
+-#================================================== 
+-# Contact Section Start
+-#================================================== -->
+%section#contact-section
+  .container
+    .row
+      .col-md-6
+        .block
+          %h2.subtitle.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".3s"} Drop Us A Quick Message
+          %p.subtitle-des.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".5s"}
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, ea! consectetur adipisicing elit. Dolore, ea!
+
+          .contact-form
+            = form_for @contact, html: {id: 'contact-form' } do |f|
+              .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".6s"}
+                = f.text_field :name, placeholder: "Your Name", class: 'form-control', id: 'name'
+              .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".8s"}
+                = f.email_field :email, placeholder: "Your Email", class: 'form-control', id: "email"
+              .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".10s"}
+                = f.text_area :message, placeholder: 'Your Message',class: 'form-control', id: "message"
+              .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".12s"}
+                = f.hidden_field :nickname, hint: 'Leave this field blank!'
+                = f.submit 'Send message', class: "btn btn-default btn-send"

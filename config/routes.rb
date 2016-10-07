@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :contacts
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
@@ -8,7 +9,6 @@ Rails.application.routes.draw do
   resources :categories
   get 'about' => 'pages#about', as: :about
   get 'service' => 'pages#service', as: :service
-  get 'contact' => 'pages#contact', as: :contact
   get 'faq' => 'pages#faq', as: :faq
   get 'terms' => 'pages#terms', as: :terms
 
