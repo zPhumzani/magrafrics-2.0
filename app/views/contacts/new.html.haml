@@ -29,11 +29,11 @@
           .contact-form
             = form_for @contact, html: {id: 'contact-form' } do |f|
               .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".6s"}
-                = f.text_field :name, placeholder: "Your Name", class: 'form-control', id: 'name'
+                = f.text_field :name, placeholder: "Your Name", class: 'form-control'
               .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".8s"}
-                = f.email_field :email, placeholder: "Your Email", class: 'form-control', id: "email"
+                = f.email_field :email, placeholder: "Your Email", class: 'form-control'
               .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".10s"}
-                = f.text_area :message, placeholder: 'Your Message',class: 'form-control', id: "message"
+                = f.text_area :message, placeholder: 'Your Message',class: 'form-control'
               .form-group.wow.fadeInDown{ "data-wow-duration": "500ms", "data-wow-delay": ".12s"}
-                = f.hidden_field :nickname, hint: 'Leave this field blank!'
+                = f.hidden_field :nickname
                 = f.submit 'Send message', class: "btn btn-default btn-send"

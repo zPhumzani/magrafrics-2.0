@@ -1,6 +1,8 @@
 class Contact < MailForm::Base
+  append :remote_ip, :user_agent, :session
   attribute :name,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+
   attribute :message
   attribute :nickname,  :captcha  => true
 
