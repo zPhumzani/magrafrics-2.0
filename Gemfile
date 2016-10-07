@@ -24,11 +24,13 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'foreman'
 
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'sqlite3'
   gem 'rails_layout'
+  gem 'letter_opener'
 end
 
 group :development do
