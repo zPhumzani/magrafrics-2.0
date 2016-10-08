@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require jquery.fancybox.js
+//= require owl.carousel.min.js
+//= require wow.min.js
 //= require_tree .
